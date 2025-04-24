@@ -1,0 +1,29 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Node/npm
+node_modules/
+dist/
+build/
+
+# OS generated
+.AppleDouble
+.LSOverride
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Logs and temp
+*.log
+*.tmp
+
+# Personal/system folders
+AppData/
+NTUSER.*
+*.mp4
+*.sqlite
+
+# Editor folders
+.vscode/
+.idea/
