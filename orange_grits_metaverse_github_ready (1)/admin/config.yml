@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "zones"
+    label: "Product Zones"
+    files:
+      - file: "data.json"
+        label: "Zones"
+        name: "zones"
+        fields:
+          - { label: "ID", name: "id", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Message", name: "message", widget: "string" }
+          - { label: "Image", name: "image", widget: "string" }
+          - { label: "Sound", name: "sound", widget: "string" }
+          - { label: "Members Only", name: "membersOnly", widget: "boolean" }

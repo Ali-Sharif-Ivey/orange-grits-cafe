@@ -1,0 +1,28 @@
+{
+  "zones": [
+    {
+      "id": "orangeGritsZone",
+      "title": "Little Robert\u2019s Orange Grits",
+      "message": "\ud83e\udd63 A Bowl of Sunshine. Here's your bonus recipe for Grit Cakes!",
+      "image": "grits.jpg",
+      "sound": "grits.mp3",
+      "membersOnly": true
+    },
+    {
+      "id": "sneakyZone",
+      "title": "Sneaky Sweet Heet Sauces",
+      "message": "\ud83d\udd25 Tap each flavor for usage tips!",
+      "image": "sauce.jpg",
+      "sound": "sauce.mp3",
+      "membersOnly": false
+    },
+    {
+      "id": "zmetaZone",
+      "title": "ZMeta Energized Chocolate",
+      "message": "\ud83d\udd12 ZMeta recipes are top secret.",
+      "image": "zmeta.jpg",
+      "sound": "locked.mp3",
+      "membersOnly": true
+    }
+  ]
+}
