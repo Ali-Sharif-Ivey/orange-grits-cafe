@@ -1,0 +1,167 @@
+<!-- ORANGE GRITS CAFÉ: FULL LAUNCH VERSION WITH META INTERACTION + CUSTOMER WORLD -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orange Grits Café Metaverse Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(#fff8e1, #fff3e0);
+      background-image: url('meta-cafe-bg.gif');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #4e342e;
+      padding: 2em;
+      overflow-x: hidden;
+    }
+    nav {
+      background: rgba(255, 152, 0, 0.9);
+      padding: 1em;
+      text-align: center;
+      border-radius: 12px;
+    }
+    nav a {
+      margin: 0 1em;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      text-shadow: 0 0 6px #fff;
+    }
+    h1 {
+      text-align: center;
+      color: #ff9800;
+      animation: pulseText 3s infinite;
+    }
+    @keyframes pulseText {
+      0% { color: #ff9800; }
+      50% { color: #ffa726; }
+      100% { color: #ff9800; }
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin-top: 2em;
+    }
+    .product-card {
+      background: rgba(255, 243, 224, 0.95);
+      border: 2px solid #ffe0b2;
+      border-radius: 16px;
+      padding: 1.5em;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .product-card::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      width: 60%;
+      height: 5px;
+      background: radial-gradient(circle, #ff9800, transparent);
+      transform: translateX(-50%);
+      opacity: 0.6;
+    }
+    .product-card img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: contain;
+      margin-bottom: 1em;
+      transition: transform 0.4s ease;
+    }
+    .product-card:hover img {
+      transform: scale(1.05) rotate(-2deg);
+    }
+    .product-card h3 {
+      margin: 0.5em 0 0.3em 0;
+    }
+    .product-card p {
+      font-size: 0.9em;
+      color: #6d4c41;
+    }
+    .btn-group {
+      margin-top: 1em;
+      display: flex;
+      gap: 0.5em;
+      justify-content: center;
+    }
+    .btn {
+      padding: 0.6em 1em;
+      font-size: 0.85em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    .btn-cart { background: #ff9800; color: #fff; }
+    .btn-info { background: #ffe082; color: #4e342e; }
+    .btn-recipe { background: #aed581; color: #33691e; }
+    .btn-cart:hover { background: #fb8c00; }
+    .btn-info:hover { background: #ffd54f; }
+    .btn-recipe:hover { background: #9ccc65; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="loyalty.html">Loyalty</a>
+    <a href="about.html">About Us</a>
+  </nav>
+  <h1>Welcome to the Orange Grits Café</h1>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="grits-product.jpg" alt="Orange Grits">
+      <h3>Little Robert’s Orange Grits</h3>
+      <p>Sun-charged and soul-nourishing. The heart of the café.</p>
+      <div class="btn-group">
+        <button class="btn btn-cart">Add to Cart</button>
+        <button class="btn btn-info">More Info</button>
+        <button class="btn btn-recipe">View Recipe</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="zmeta-chocolate.jpg" alt="ZMeta Chocolate">
+      <h3>ZMeta Energized Chocolate</h3>
+      <p>Powered by ancient cocoa rituals. Brain boost included.</p>
+      <div class="btn-group">
+        <button class="btn btn-cart">Add to Cart</button>
+        <button class="btn btn-info">More Info</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="heet-rosemary.jpg" alt="Sneaky Sweet Heet - Rosemary Citrus">
+      <h3>Sneaky Sweet Heet - Rosemary Citrus</h3>
+      <p>Sharp herbs, citrus zing, and sweet heat. One of four bees.</p>
+      <div class="btn-group">
+        <button class="btn btn-cart">Add to Cart</button>
+        <button class="btn btn-info">More Info</button>
+        <button class="btn btn-recipe">View Recipe</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Floating voice-buzz Flavor Bee intro (NPC placeholder)
+    const welcomeBuzz = new Audio('buzz.mp3');
+    window.addEventListener('load', () => {
+      setTimeout(() => welcomeBuzz.play(), 1000);
+    });
+  </script>
+</body>
+</html>
