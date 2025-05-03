@@ -1,0 +1,144 @@
+<!-- ORANGE GRITS CAFÉ: PRODUCT SHELF WITH INTERACTIVE CARDS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Orange Grits Café</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8e1;
+      color: #4e342e;
+      padding: 2em;
+    }
+    h1 {
+      text-align: center;
+      color: #ff9800;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin-top: 2em;
+    }
+    .product-card {
+      background: #fff3e0;
+      border: 2px solid #ffe0b2;
+      border-radius: 16px;
+      padding: 1.5em;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+    .product-card img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: contain;
+      margin-bottom: 1em;
+    }
+    .product-card h3 {
+      margin: 0.5em 0 0.3em 0;
+    }
+    .product-card p {
+      font-size: 0.9em;
+      color: #6d4c41;
+    }
+    .btn-group {
+      margin-top: 1em;
+      display: flex;
+      gap: 0.5em;
+      justify-content: center;
+    }
+    .btn {
+      padding: 0.6em 1em;
+      font-size: 0.85em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn-cart { background: #ff9800; color: #fff; }
+    .btn-info { background: #ffe082; color: #4e342e; }
+    .btn-recipe { background: #aed581; color: #33691e; }
+    .btn-cart:hover { background: #fb8c00; }
+    .btn-info:hover { background: #ffd54f; }
+    .btn-recipe:hover { background: #9ccc65; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Orange Grits Café Store</h1>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="grits-product.jpg" alt="Orange Grits">
+      <h3>Little Robert’s Orange Grits</h3>
+      <p>A soulful bowl of sunshine. Smooth, hearty, and homegrown.</p>
+      <div class="btn-group">
+        <button class="btn btn-cart">Add to Cart</button>
+        <button class="btn btn-info">More Info</button>
+        <button class="btn btn-recipe">View Recipe</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="heet-honey-mustard.jpg" alt="Honey Mustard Dill">
+      <h3>Honey Mustard Dill</h3>
+      <p>Sneaky Sweet Heet - tangy, bold, and a touch of mischief.</p>
+      <div class="btn-group">
+        <button class="btn btn-cart">Add to Cart</button>
+        <button class="btn btn-info">More Info</button>
+        <button class="btn btn-recipe">View Recipe</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="heet-rosemary-citrus.jpg" alt="Rosemary Citrus">
+      <h3>Rosemary Citrus</h3>
+      <p>Fresh herbs meet citrus fire. Wake up your dishes.</p>
+      <div class="btn-group">
+        <button class="btn btn-cart">Add to Cart</button>
+        <button class="btn btn-info">More Info</button>
+        <button class="btn btn-recipe">View Recipe</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="heet-beets-cardamom.jpg" alt="Beets & Cardamom">
+      <h3>Beets & Cardamom</h3>
+      <p>Earthy sweet meets warm spice — surprising and addictive.</p>
+      <div class="btn-group">
+        <button class="btn btn-cart">Add to Cart</button>
+        <button class="btn btn-info">More Info</button>
+        <button class="btn btn-recipe">View Recipe</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="heet-cilantro-mint.jpg" alt="Cilantro Mint">
+      <h3>Cilantro Mint</h3>
+      <p>Cool, green, and smooth — perfect with a twist of heat.</p>
+      <div class="btn-group">
+        <button class="btn btn-cart">Add to Cart</button>
+        <button class="btn btn-info">More Info</button>
+        <button class="btn btn-recipe">View Recipe</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="zmeta-chocolate.jpg" alt="ZMeta Chocolate">
+      <h3>ZMeta Energized Chocolate</h3>
+      <p>Bold, boosted, and dusted with mountain cocoa mystery.</p>
+      <div class="btn-group">
+        <button class="btn btn-cart">Add to Cart</button>
+        <button class="btn btn-info">More Info</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
