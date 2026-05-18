@@ -1,1 +1,108 @@
-<!-- Entry Screen HTML -->
+<!-- Entry Screen HTML --><footer class="io-global-footer">
+    <div class="io-footer-container">
+        
+        <div class="io-footer-brand">
+            <span class="io-logo">🐙 THE IRON OCTOPUS</span>
+            <p class="io-tagline">Reaching for Better.</p>
+            <p class="io-heritage">Est. 10+ Years | 2490 Lee Blvd, Cleveland Heights, OH</p>
+        </div>
+
+        <div class="io-footer-grid">
+            <div class="io-grid-column">
+                <h4>Athletics & Gear</h4>
+                <a href="https://www.izzahsports.com" target="_blank">Izzah Sports</a>
+                <a href="https://www.izzahapparel.com" target="_blank">Izzah Apparel</a>
+                <a href="https://www.venomforce.com" target="_blank">Venom Force</a>
+            </div>
+            <div class="io-grid-column">
+                <h4>Culinary & Print</h4>
+                <a href="https://www.orangegrits.com" target="_blank">Little Robert's Orange Grits</a>
+                <a href="https://manyspoons.com" target="_blank">Many Spoons</a>
+                <span class="io-imprint">Man of Still Publishing</span>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="io-footer-bottom">
+        <p>&copy; 2026 Iron Octopus Holding Co. All Rights Reserved. Managed via concept dig. LLC.</p>
+    </div>
+</footer>
+
+<style>
+.io-global-footer {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    border-top: 1px dashed #333333;
+}
+.io-footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+.io-footer-brand {
+    flex: 1;
+    min-width: 250px;
+}
+.io-logo {
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+}
+.io-tagline {
+    color: #888888;
+    font-style: italic;
+    margin: 0 0 15px 0;
+    font-size: 0.9rem;
+}
+.io-heritage {
+    color: #666666;
+    font-size: 0.8rem;
+    margin: 0;
+}
+.io-footer-grid {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.io-grid-column h4 {
+    color: #aaaaaa;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 15px 0;
+}
+.io-grid-column a, .io-imprint {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    transition: color 0.2s;
+}
+.io-grid-column a:hover {
+    color: #ff5500; /* Subtle accent trigger color */
+}
+.io-imprint {
+    color: #888888;
+}
+.io-footer-bottom {
+    max-width: 1000px;
+    margin: 30px auto 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid #222222;
+    text-align: center;
+    color: #444444;
+    font-size: 0.75rem;
+}
+@media (max-width: 600px) {
+    .io-footer-container { flex-direction: column; }
+    .io-footer-grid { gap: 30px; }
+}
+</style>
